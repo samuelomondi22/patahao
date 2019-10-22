@@ -7,7 +7,6 @@ import {
   IoMdMail,
   IoLogoTwitter
 } from "react-icons/io";
-import { Link } from "react-router-dom";
 
 const ContactInfo = () => {
   return (
@@ -15,25 +14,34 @@ const ContactInfo = () => {
       <Title title="ContactInfo" />
       <p>
         If you are interested in renting or getting a rental to stay in, look no
-        further. Underneath are information on how to get in contact with us;
+        further. Underneath are information on how to get in contact with us. Be sure to use any 
+        the platform to get a a room/house or to sell off;
       </p>
       <br />
       <div>
-        <Link to="/">
+        <span className='space'>
+        <a href="https://www.facebook.com/pata.hao.75">
           {" "}
           <IoLogoFacebook />
-        </Link>
-        <Link to="/">
+        </a>
+        </span>
+        <span className='space'>
+        <a href="https://www.instagram.com/pataahaoo/">
           <IoLogoInstagram />
-        </Link>
-        <Link to="/">
+        </a>
+        </span>
+        <span className='space'>
+        <a href="https://twitter.com/patahao1">
           <IoLogoTwitter />
-        </Link>
+        </a>
+        </span>
       </div>
       <div className="container">
-        <IoIosCall /> <p>0741403098</p>
+        <div><IoIosCall /><span className='space'>0762706424</span></div>
         <IoMdMail />
-        <p>omondisam696@gmail.com</p>
+        <span className='space'>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pataahaoo@gmail.com&su=SUBJECT&body=BODY"> pataahaoo@gmail.com</a>
+        </span>
       </div>
     </article>
   );
