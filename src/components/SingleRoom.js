@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import defaultBcg from "../images/room-1.jpeg";
-import Hero from "../components/Hero";
 import Banner from "./Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import StyledHero from "./StyledHero";
+import RoomInfoContact from "./RoomInfoContact";
 
 export default class SingleRoom extends Component {
   //access url for slug
@@ -88,6 +88,7 @@ export default class SingleRoom extends Component {
             })}
           </ul>
         </section>
+        <RoomInfoContact />
       </>
     );
   }

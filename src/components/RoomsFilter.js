@@ -11,14 +11,14 @@ const RoomsFilter = ({ rooms }) => {
   const {
     handleChange,
     type,
-    capacity,
+    // capacity,
     price,
     minPrice,
     maxPrice,
     minSize,
     maxSize,
-    breakfast,
-    pets
+    // breakfast,
+    // pets
   } = context;
   //get unique tyes
   let types = getUnique(rooms, "type");
